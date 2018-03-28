@@ -2,8 +2,8 @@
 Image API to upload and generate image URL in realtime
 
 # Important 
-Needs secure connection to allow camera :(
-If you not have secure connection use this on localhost. :) 
+Needs secure connection to allow camera :( <br>
+If you not have secure connection use this on localhost. :)  <br>
 
 # Installation 
 Step 1: Download Master Branch <br>
