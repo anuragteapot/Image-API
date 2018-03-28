@@ -34,21 +34,21 @@
 
 			var activityTimeout = setTimeout(save, 2000);
 
-			function save(){
-				var canvas = document.getElementById("canvas");
-                var dataURL = canvas.toDataURL("image/png");
-                var name = document.getElementById("user").value;
-                name = name.toLowerCase();
+		function save(){
+			var canvas = document.getElementById("canvas");
+                	var dataURL = canvas.toDataURL("image/png");
+                	var name = document.getElementById("user").value;
+                	name = name.toLowerCase();
 
                if(name!='')
                {
-					 $.ajax({
+			 $.ajax({
 	                    type: "POST", 
 	                    url: "includes/genapi.php", 
 	                    data: { img: dataURL,name: name }      
 	                }).done(function(msg){
 	                	document.getElementById("myInput").value = msg; 
-	                	//Get you responce image from  " msg " variable
+	                	//Get you responce image URL from  " msg " variable
 	                 	//alert(query); 
 	            
 	                });
